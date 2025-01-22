@@ -1,0 +1,40 @@
+{
+  "name": "mustdo",
+  "productName": "MustDo",
+  "author": "shoukomie",
+  "version": "1.0.0",
+  "description": "A simple but functional to do list application",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "sortablejs": "^1.15.6"
+  },
+  "build": {
+    "appId": "com.shoukomie.MustDo",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MustDo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="tab-menu">
+        <ul>
+            <li id="change-tab-color">Change tab color</li>
+            <li id="rename-tab">Rename Tab</li>
+            <li id="del-tab">Delete tab and contents</li>
+        </ul>
+    </div>
+    <input id="tab-renamer-input"></input>
+    <div id="tab-color-menu">
+        <div id="color-option-div">
+            <button class="color-option" style="background-color: #ffbe0b;" data-color="#ffbe0b"></button>
+            <button class="color-option" style="background-color: #fb5607;" data-color="#fb5607"></button>
+            <button class="color-option" style="background-color: #ff006e;" data-color="#ff006e"></button>
+            <button class="color-option" style="background-color: #8338ec;" data-color="#8338ec"></button>
+            <button class="color-option" style="background-color: #3a86ff;" data-color="#3a86ff"></button>
+            <button class="color-option" style="background-color: #fb07ef;" data-color="#fb07ef"></button>
+            <button class="color-option"id="color-reset" style="background-color: #111111;"></button>
+        </div>
+    </div>
+    <div id="tabs-bar">
+        <button class="tab" id="ALL-tab">ALL</button>
+    </div>
+    <div  id="container">
+        <!-- (todo-item)s are generated in here!-->
+    </div>
+    <button id="new-button" onclick="newItem()">+</button>
+    <button id="clear-completed" onclick="clearCompleted()">clear done</button>
+    <script src="func.js"></script>
+</body>
+</html>
