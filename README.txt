@@ -1,3 +1,15 @@
+Features:
+- Task creation and deletion
+- Assign titles and descriptions
+- Complete/uncomplete tasks
+- Clear all complete tasks
+- Assign tags which create tab groups
+- Right-click on tabs to change their color, rename them, or delete them and their contents
+- Clean UI!
+
+
+
+
 USED REPOS:
 
 https://github.com/electron/electron --> webapp into just desktop app
